@@ -62,8 +62,7 @@ export default function Textarea(props) {
     </div>
 
     <div>
-        <h1>Nothing to Preview!</h1>
-        <p>{text}</p>
+        {text.length === 0 ? <h1>Nothing to preview</h1> : <p>{text}</p>}
     </div>
     </div>
   )
